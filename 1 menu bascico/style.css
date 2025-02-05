@@ -6,16 +6,17 @@ body{
 }
 
 header{
-    background-color: #333;
+    background-color: silver;
     display: flex;
     min-height: 70px;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: blueviolet;
 }
 .logo {
     display: flex;
@@ -37,6 +38,16 @@ nav a{
 nav a:hover{
     color: chocolate;
     
+}
+
+@media(max-width:450px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        padding: 10px 0px;
+    }
 }
 
 
