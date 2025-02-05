@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: silver;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: burlywood;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+a {
+  text-decoration: none;
+  color: greenyellow;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  font-weight: 600px;
+  font-size: 120%;
+}
+nav a{
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+nav a:hover {
+  color: darkslateblue;
+  cursor: pointer;
+  transform:  skewX(-10deg); 
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
